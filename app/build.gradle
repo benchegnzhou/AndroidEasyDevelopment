@@ -1,14 +1,22 @@
 apply plugin: 'com.android.application'
+//通用配置引入
+apply from: '../commonConfig.gradle'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion android.targetSdkVersion
     defaultConfig {
         applicationId "com.zbc.androideasydevelopment"
-        minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion android.minSdkVersion
+        targetSdkVersion android.targetSdkVersion
+        versionCode android.versionCode
+        versionName android.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+        manifestPlaceholders = [CHANNEL_NAME: "channel_name"]
     }
     buildTypes {
         release {
