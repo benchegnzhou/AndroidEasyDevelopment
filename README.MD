@@ -9,9 +9,16 @@
 ![](https://github.com/benchegnzhou/imagerepository/raw/master/androidImg/image_000286.png)
 
 
-* 1.2 在需要使用的moudle中引入这个脚本文件
+* 1.2 在需要使用的moudle中引入这个脚本配置文件，并引用对应的属性
 
 
 ![](https://github.com/benchegnzhou/imagerepository/raw/master/androidImg/image_000287.png)
+
+
+
+
+> **注意脚本的移入应在使用这个配置属性的前面，即先引入后使用**
+
+
 
 

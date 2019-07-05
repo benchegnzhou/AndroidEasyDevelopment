@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 //通用配置引入
 apply from: '../commonConfig.gradle'
+apply plugin: 'com.zbc.plugin.PluginTest'
+
+
 
 android {
     compileSdkVersion android.targetSdkVersion
