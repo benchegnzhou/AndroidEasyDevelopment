@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 //通用配置引入
 apply from: '../commonConfig.gradle'
-apply plugin: 'com.zbc.plugin.PluginTest'
 
+//apply plugin 'com.zbc.plugin.plugin.test'
+
+apply plugin: com.zbc.plugin.PluginDemo
 
 
 android {
