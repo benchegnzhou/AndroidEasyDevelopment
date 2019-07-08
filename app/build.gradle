@@ -4,7 +4,7 @@ apply from: '../commonConfig.gradle'
 
 //apply plugin 'com.zbc.plugin.plugin.test'
 
-apply plugin: com.zbc.plugin.PluginDemo
+//apply plugin: com.zbc.plugin.plugin.test
 
 
 android {
