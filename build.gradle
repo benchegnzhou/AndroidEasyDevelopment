@@ -1,14 +1,28 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+ 
 
 buildscript {
     repositories {
-        google()
         jcenter()
-        
+
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.2'
-        
+
+        //jar包快速上传仓库
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+
+        // 数据库GreenDao
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+
+        //腾讯热修复插件依赖，无需再单独引用tinker的其他库
+//        classpath "com.tinkerpatch.sdk:tinkerpatch-gradle-plugin:${TINKERPATCH_VERSION}"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -16,10 +30,19 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
         jcenter()
-        
+
+
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url 'https://jitpack.io' }
+
     }
+
 }
 
 task clean(type: Delete) {

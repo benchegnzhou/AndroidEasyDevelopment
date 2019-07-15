@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#ff5f7d</color>
+    <color name="colorAccent">#ff5f7d</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorgray">#969191</color>
+    <color name="colorLightGray">#cccccc</color>
+    <color name="backgroud_58">#f6f6f6</color>
+    <color name="apptheme">#ff5f7d</color>
+    <color name="appthemedark">#E55570</color>
+
+
+    <!--2017-11-22 发布前第一版颜色矫正-->
+    <color name="color_black">#000000</color>
+    <color name="color_text_33333">#333333</color>
+    <color name="color_text_666666">#666666</color>
+    <color name="color_text_999999">#999999</color>
+    <color name="color_text_a8a8a8">#a8a8a8</color>
+    <color name="color_text_a9a9a9">#a9a9a9</color>
+    <color name="color_37a3ee">#37a3ee</color>
+    <color name="color_hint_dcdcdc">#dcdcdc</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_47a8fc">#47a8fc</color>
+    <color name="color_fff3f5">#fff3f5</color>
+    <color name="color_f2f9ff">#f2f9ff</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_c2c2c2">#c2c2c2</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_ececec">#ececec</color>
+
+    <color name="color_title_bar">#ffffff</color>
+
+    <color name="color_bg_c8c8c8">#c8c8c8</color>
+    <color name="color_bg_f0f0f0">#f0f0f0</color>
+    <color name="color_bg_ffffff">#ffffff</color>
+    <color name="color_bg_f5f5f5">#f5f5f5</color>
+
+    <color name="color_line_dfdfdf">#dfdfdf</color>
+
+
+    <color name="color_sharp_ff5f7d_36">#5cff5f7d</color>
+    <color name="color_sharp_ff5f7d">#ff5f7d</color>
+    <color name="color_sharp_btn_select_a1a1a1">#66a1a1a1</color>
+
+    <!--这下面的颜色是和Zxing有关的 -->
+
+    <!--红色-->
+    <color name="colorRedlike">#FD5056</color>
+
+
+
+    <!--个人中心相册背景-->
+    <color name="cardview_light_background">#663FB4</color>
+    <!--个人中心头像背景色-->
+    <color name="white">#FFFFFF</color>
+    <!-- 登录界面分割线颜色 -->
+    <color name="line">#EEEEED</color>
+    <!-- 登录按钮背景颜色 -->
+    <!-- 登录上文字颜色 -->
+    <color name="login_btn_textcolor">#FEFEFE</color>
+    <!--分割线的颜色-->
+    <color name="line_color">#E1E1E1</color>
+    <!--布局大背景颜色-->
+    <!--布局小背景颜色-->
+    <color name="comment_person">#00AAEE</color>
+
+
+    <!--美工配色-->
+    <color name="community_tittle_background">#E64B4E</color>
+
+
 </resources>
