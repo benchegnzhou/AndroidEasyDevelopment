@@ -2,9 +2,12 @@ package com.ztsc.commonutils;
 
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.ztsc.commonutils.common.Utils;
 import com.ztsc.commonutils.utilconfig.Config;
+
+import org.afinal.simplecache.CacheConfig;
 
 /**
  * 项目通用工具类同统一初始化入口
@@ -39,6 +42,9 @@ public class CommonUtil {
     public void init(Context context, Config config) {
         mContext = context;
         mConfig = config;
+        if (config != null && !TextUtils.isEmpty(config.getACacheFname())) {
+            CacheConfig.aCacheFileName = config.getACacheFname();
+        }
         Utils.init(context);
     }
 
@@ -57,6 +63,7 @@ public class CommonUtil {
 
     /**
      * 读取配置文件
+     *
      * @return
      */
     public Config getConfig() {

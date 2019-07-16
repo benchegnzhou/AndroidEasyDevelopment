@@ -187,6 +187,8 @@ dependencies {
     implementation project(':statusBarLibrary')
     implementation project(':commonutils')
     implementation project(':refresh-layout')
+    implementation project(':observableScrollView')
+    implementation project(':circleimageview')
     implementation dependenciesLib.rxjava
     implementation dependenciesLib.rxandroid
     implementation 'com.tencent.bugly:crashreport:2.6.6.1'
