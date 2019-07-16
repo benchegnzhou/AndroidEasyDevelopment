@@ -173,7 +173,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation dependenciesLib.appcompat_v7
+    implementation dependenciesLib.support_v7
     implementation dependenciesLib.recyclerview
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

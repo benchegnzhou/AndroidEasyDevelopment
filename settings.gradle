@@ -1,2 +1,3 @@
 include ':app', ':appupdatelib'
-include ':buildsrc','baseRecyclerViewHelperlibrary','statusBarLibrary','commonutils','refresh-layout','observableScrollView','circleimageview'
+include ':buildsrc','baseRecyclerViewHelperlibrary','statusBarLibrary','commonutils','refresh-layout','observableScrollView','circleimageview','easypermissions'
+include ':updatesResources'

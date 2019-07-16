@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+//通用配置引入
+apply from: '../commonConfig.gradle'
+
+android {
+    compileSdkVersion android.targetSdkVersion
+    defaultConfig {
+
+        minSdkVersion android.minSdkVersion
+        targetSdkVersion android.targetSdkVersion
+        versionCode android.versionCode
+        versionName android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+        release {
+            minifyEnabled false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    api "androidx.appcompat:appcompat:1.0.2"
+    api "androidx.core:core:1.0.1"
+    api "androidx.fragment:fragment:1.0.0"
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'com.google.truth:truth:0.42'
+    testImplementation 'org.robolectric:robolectric:4.1'
+    testImplementation 'androidx.test:core:1.1.0'
+    testImplementation 'androidx.fragment:fragment-testing:1.1.0-alpha03'
+    testImplementation 'org.mockito:mockito-core:2.23.4'
+}
+
+

@@ -6,9 +6,13 @@ apply from: '../commonConfig.gradle'
 
 dependencies {
     implementation dependenciesLib.recyclerview
-    androidTestImplementation ('com.android.support:appcompat-v7:28.0.0') {
+   /* androidTestImplementation (dependenciesLib.appcompat_v4){
         exclude module: 'support-v4'
-    }
+    }*/
+    implementation dependenciesLib.support_v4
+//    implementation(dependenciesLib.support_v4) {
+//        exclude module: 'support-annotations'
+//    }
     androidTestImplementation ('com.nineoldandroids:library:2.4.0') {
         exclude module: 'support-v4'
     }

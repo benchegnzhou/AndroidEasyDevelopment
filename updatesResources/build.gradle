@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+//通用配置引入
+apply from: '../commonConfig.gradle'
+
+android {
+    compileSdkVersion android.targetSdkVersion
+    defaultConfig {
+
+        minSdkVersion android.minSdkVersion
+        targetSdkVersion android.targetSdkVersion
+        versionCode android.versionCode
+        versionName android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+}
+dependencies {
+    compileOnly dependenciesLib.annotation
+}
