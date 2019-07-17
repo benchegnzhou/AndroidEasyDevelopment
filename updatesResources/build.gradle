@@ -17,4 +17,6 @@ android {
 }
 dependencies {
     compileOnly dependenciesLib.annotation
+    compileOnly dependenciesLib.support_v7
+    compileOnly dependenciesLib.gson
 }

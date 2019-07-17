@@ -14,8 +14,18 @@ import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.zbc.androideasydevelopment.base.BaseActivity;
+import com.zbc.updates.HttpManager;
+import com.zbc.updates.SilenceUpdateCallback;
+import com.zbc.updates.UpdateAppBean;
+import com.zbc.updates.UpdateAppManager;
+import com.zbc.updates.UpdateCallback;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -74,7 +84,6 @@ public class MainActivity extends BaseActivity {
         list.add("aa");
         list.add("aa");
         list.add("aa");
-
         baseQuickAdapter.setNewData(list);
     }
 }

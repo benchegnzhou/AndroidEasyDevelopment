@@ -9,6 +9,10 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        maven {
+            //这一行是上面步骤（copy URL）拷贝得到的
+            url "http://localhost:8081/repository/com.zbc.common/"
+        }
         google()
     }
     dependencies {
