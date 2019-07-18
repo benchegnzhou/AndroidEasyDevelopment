@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -13,7 +14,9 @@ import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
+import com.zbc.androideasydevelopment.application.MApplicationInfo;
 import com.zbc.androideasydevelopment.base.BaseActivity;
+import com.zbc.androideasydevelopment.util.AppUpdateUtil;
 import com.zbc.updates.HttpManager;
 import com.zbc.updates.SilenceUpdateCallback;
 import com.zbc.updates.UpdateAppBean;
@@ -30,6 +33,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 import butterknife.Bind;
+import butterknife.OnClick;
 
 /**
  * Created by benchengzhou on 2019/7/5  15:27 .
@@ -59,6 +63,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initListener() {
+        MApplicationInfo
+                .getInstance()
+                .otherInit();
         Logger.d("第一次打印日志好激动");
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
 
@@ -85,5 +92,16 @@ public class MainActivity extends BaseActivity {
         list.add("aa");
         list.add("aa");
         baseQuickAdapter.setNewData(list);
+
+    }
+
+    @OnClick({R.id.rl_btn})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.rl_btn:
+                AppUpdateUtil.getInstance().checkNewVersion(this);
+                break;
+
+        }
     }
 }

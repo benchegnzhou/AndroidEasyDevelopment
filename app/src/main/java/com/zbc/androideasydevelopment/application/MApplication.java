@@ -26,6 +26,11 @@ public class MApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initSdk();
+        baseInit();
+    }
+
+    private void baseInit() {
+        MApplicationInfo.getInstance().init(this,getApplicationContext());
     }
 
     private void initSdk() {

@@ -30,9 +30,9 @@ import com.ztsc.commonutils.CommonUtil;
  */
 public class LogUtil {
 
-    private final static String tag = CommonUtil.getInstance().getConfig().LogTag;
+    private final static String tag = CommonUtil.getInstance().getConfig().logTag;
     //通过配置文件控制log日志
-    private final static boolean state = CommonUtil.getInstance().getConfig().LogOpen;
+    private final static boolean state = CommonUtil.getInstance().getConfig().logOpen;
 
     public static void d(String str) {
         if (state) {
@@ -125,7 +125,6 @@ public class LogUtil {
         if (state){
             Log.e(mTag, msg,tr);
         }
-
     }
 
 }

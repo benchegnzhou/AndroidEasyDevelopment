@@ -4,7 +4,7 @@ apply from: '../commonConfig.gradle'
 //数据库greendao
 apply plugin: 'org.greenrobot.greendao' // apply plugin
 //apply plugin 'com.zbc.plugin.plugin.test'
-apply plugin: 'geekplugin'
+//apply plugin: 'geekplugin'
 
 android {
     compileSdkVersion android.targetSdkVersion

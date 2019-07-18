@@ -16,7 +16,7 @@ public class ToastUtils {
      * 定义的土司工具类,实现单例的可以连续的弹出内容的土司
      */
     public static Toast toast;
-    public static boolean isShowToast = CommonUtil.getInstance().getConfig().ToastOpen;
+    public static boolean isShowToast = CommonUtil.getInstance().getConfig().toastOpen;
 
     /**
      * 用户提示吐司

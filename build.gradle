@@ -11,7 +11,7 @@ buildscript {
         }
         maven {
             //这一行是上面步骤（copy URL）拷贝得到的
-            url "http://localhost:8081/repository/com.zbc.common/"
+            url "http://localhost:8087/repository/com.zbc.common/"
         }
         google()
     }
@@ -24,6 +24,8 @@ buildscript {
 
         // 数据库GreenDao
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+
+        classpath 'com.zbc.common:printPlugin:1.0.2'
 
         //腾讯热修复插件依赖，无需再单独引用tinker的其他库
 //        classpath "com.tinkerpatch.sdk:tinkerpatch-gradle-plugin:${TINKERPATCH_VERSION}"

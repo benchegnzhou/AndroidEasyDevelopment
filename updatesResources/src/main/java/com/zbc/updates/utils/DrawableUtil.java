@@ -7,8 +7,8 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.widget.TextView;
 
-import static com.vector.update_app.utils.ColorUtil.getColorStateList;
-import static com.vector.update_app.utils.ColorUtil.getRandomColor;
+import static com.zbc.updates.utils.ColorUtil.getColorStateList;
+import static com.zbc.updates.utils.ColorUtil.getRandomColor;
 
 
 /**
@@ -210,7 +210,7 @@ public class DrawableUtil {
      * @param cornerRadius 圆角
      */
     public static void setTextStrokeTheme(TextView textView, int strokeWidth, int cornerRadius) {
-        setTextStrokeTheme(textView, strokeWidth, cornerRadius, ColorUtil.getRandomColor());
+        setTextStrokeTheme(textView, strokeWidth, cornerRadius, getRandomColor());
     }
 
     /**
@@ -253,7 +253,7 @@ public class DrawableUtil {
      * @param cornerRadius 圆角
      */
     public static void setTextSolidTheme(TextView textView, int strokeWidth, int cornerRadius) {
-        setTextSolidTheme(textView, strokeWidth, cornerRadius, ColorUtil.getRandomColor());
+        setTextSolidTheme(textView, strokeWidth, cornerRadius, getRandomColor());
     }
 
     /**

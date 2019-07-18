@@ -1,7 +1,9 @@
 package com.zbc.updates;
 
-import com.vector.update_app.service.DownloadService;
-import com.vector.update_app.utils.AppUpdateUtils;
+
+
+import com.zbc.updates.service.DownloadService;
+import com.zbc.updates.utils.AppUpdateUtils;
 
 import java.io.File;
 
