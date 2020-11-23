@@ -5,7 +5,7 @@
 ext {
     //脚本需要上传的build_type安装包类别，脚本将过滤该类别的安装包，进行上传处理
     app_build_type = [
-            build_type_check  : "check",     //测试环境包
+            build_type_check  : "dev",       //测试环境包
             build_type_debug  : "debug",     //测试开发环境包
             build_type_release: "release"    //生产环境包
     ]

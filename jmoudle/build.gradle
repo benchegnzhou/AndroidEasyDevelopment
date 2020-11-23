@@ -2,8 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-//通用配置引入
-apply from: '../commonConfig.gradle'
+
 android {
     compileSdkVersion android.compileSdkVersion
 

@@ -1,7 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 //在根项目中移入全局管理配置文件
-apply from: file("commonConfig.gradle")
-apply from: file("copyProdectTask.gradle")
 apply plugin: 'com.alibaba.arouter'
 
 buildscript {
@@ -107,6 +105,16 @@ task clean(type: Delete) {
 }
 
 
+//为每一个子moudle配置对应的信息
+allprojects.forEach { project ->
+    println("_______")
+    println "当前配置的project是 ${project.name}"
+    println("+++++${project.rootProject.rootDir}\\commonConfig.gradle")
+    def path="${project.rootProject.rootDir}\\commonConfig.gradle"
+    //设置每一个子moudle都配置这个脚本
+    project.apply from: path
+}
+
 String cmd = 'gradle.bat -v'
 
 task openNotePad {
@@ -148,11 +156,13 @@ task openNotePad {
 
 
 task testTask {
-    dependsOn(":commonuimoudle:outputApp1")
+    dependsOn(":commonUiMoudle:outputApp1")
     doLast {
         println "testTask hahahhahaha"
     }
 }
+
+
 def project1 = project("commonUiMoudle") //.tasks.findByName("outputApp1")
 this.project.afterEvaluate { project ->
     println "afterEvaluate-----${project1.name}"
@@ -179,6 +189,7 @@ this.project.afterEvaluate { project ->
     }
 
 }
+
 
 
 

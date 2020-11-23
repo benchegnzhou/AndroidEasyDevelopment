@@ -5,8 +5,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-noarg'
 apply plugin: 'kotlin-allopen'
 apply plugin: 'kotlin-android-extensions'
-//通用配置引入
-apply from: '../commonConfig.gradle'
+
 
 
 android {

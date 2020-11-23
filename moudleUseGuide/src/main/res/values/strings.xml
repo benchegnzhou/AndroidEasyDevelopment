@@ -12,4 +12,8 @@
 
     <string name="toast_demo_success_msg">重置成功</string>
     <string name="toast_demo_error_msg">重置失败</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

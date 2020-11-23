@@ -99,6 +99,13 @@ android {
         _360 {}
 
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
     // 渠道参数xml清单文件替换
     productFlavors.all {
         flavor ->
@@ -115,6 +122,12 @@ dependencies {
 
     implementation dependenciesLib.appcompat_androidx
     implementation dependenciesLib.constraintlayout
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
     testImplementation dependenciesLib.junit
     testImplementation dependenciesLib.junit_android
     testImplementation dependenciesLib.espresso_android
@@ -127,7 +140,7 @@ dependencies {
 
 
     implementation project(':commonCoreUtil')
-    implementation project(':commonuimoudle')
+    implementation project(':commonUiMoudle')
 
     implementation dependenciesLib.BaseRecyclerViewAdapterHelper
 

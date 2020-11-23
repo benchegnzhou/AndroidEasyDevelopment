@@ -23,8 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-
+        <activity
+            android:name=".navigation.activity.NavigationActivity"
+            android:label="@string/title_activity_main"></activity>
         <!-- ——————————下面是极光推送注册—————————————————— -->
         <!-- Required SDK核心功能 -->
         <!-- Rich push 核心功能 since 2.0.6 -->
@@ -88,12 +89,10 @@
             android:name=".ui.activity.PhotoSelectActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.DemoDialogActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.PictureFullScreenActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -102,7 +101,6 @@
             android:name=".ui.activity.DemoEditTextActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.arouter.DemoARouterActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -111,22 +109,18 @@
             android:name=".ui.activity.arouter.DemoARouterWithParamsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.liveeventbus.DemoLiveEventBusActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.liveeventbus.DemoLiveEventBusReceiverActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.activity.webview.CommonWebViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-
         <activity android:name=".ui.activity.DemoOnSaveInstanceActivity" />
     </application>
 
