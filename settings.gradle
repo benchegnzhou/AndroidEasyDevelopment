@@ -1,0 +1,7 @@
+include ':moudleUseGuide'
+include ':commonUiMoudle'
+//include ':widget'
+include ':jmoudle'
+include ':app'
+include ':commonCoreUtil'
+rootProject.name = "ZTPropertyApp"

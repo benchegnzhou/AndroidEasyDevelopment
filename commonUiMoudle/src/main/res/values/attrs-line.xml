@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆角图片imageview-->
+    <declare-styleable name="Horizontal_PartLine_View">
+        <!--实线属性-->
+        <attr name="solid_width" format="dimension" />
+        <attr name="solid_color" format="color" />
+        <!--虚线属性，注意虚线是透明没有颜色的-->
+        <attr name="hollow_width" format="dimension" />
+        <!--控件的底色-->
+        <attr name="bg_color" format="color"/>
+        <attr name="offset" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

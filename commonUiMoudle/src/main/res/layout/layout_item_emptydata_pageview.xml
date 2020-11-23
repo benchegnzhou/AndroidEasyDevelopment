@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 没有数据-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_icon_nodata"
+        android:layout_width="@dimen/qb_px_518"
+        android:layout_height="@dimen/qb_px_518"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/qb_px_380"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_wushuju_blue" />
+
+    <TextView
+        android:id="@+id/tv_no_data_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_98"
+        android:text="暂时木有数据"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_icon_nodata"
+        android:textColor="@color/common_ui_333333"
+        android:textSize="@dimen/qb_px_50" />
+
+</RelativeLayout>

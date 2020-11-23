@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoudleUseGuide</string>
+
+
+    <!-- 主页 -->
+    <string name="home_exit_hint">再按一次退出</string>
+    <string name="home_nav_index">首页</string>
+    <string name="home_nav_found">发现</string>
+    <string name="home_nav_message">消息</string>
+    <string name="home_nav_me">我的</string>
+
+
+    <string name="toast_demo_success_msg">重置成功</string>
+    <string name="toast_demo_error_msg">重置失败</string>
+</resources>

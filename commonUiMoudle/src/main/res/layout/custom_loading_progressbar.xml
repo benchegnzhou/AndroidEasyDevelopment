@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:background="@drawable/loading_bg"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#22000000"
+    android:padding="15dip"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custom_imageview_progress_bar"
+        android:src="@drawable/uploading_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:id="@+id/custom_imageview_progress_title"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+</LinearLayout>

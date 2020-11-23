@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 注意 -->
+    <!-- value:不要写成 values-->
+    <!-- string:不要写成 String-->
+
+
+
+
+
+    <!--这里是圆角图片定义的属性-->
+    <attr name="borderRadius" format="dimension" />
+    <!--这一种相当于枚举-->
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+</resources>

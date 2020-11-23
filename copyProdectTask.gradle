@@ -1,0 +1,50 @@
+apply from: file("commonConfig.gradle")
+
+task createOutFile(group: "packageTool", description: "创建打包备份文件环境") {
+
+    def fileList = []
+    def targetPath = "${getProjectDir().absolutePath}/output/${rootProject.ext.android.versionName}"
+    if (!new File(targetPath).exists()) {
+        new File(targetPath).mkdirs()
+    } else {
+        delete targetPath
+        new File(targetPath).mkdirs()
+    }
+
+    doLast {
+        //sourceFilePath = "${rootProject.getBuildDir()}/outputs/apk/baidu/release"
+        def sourceFilePath = "${project("app").getBuildDir()}\\outputs\\apk"
+
+        def sourceFileParent = new File(sourceFilePath)
+        sourceFileParent.listFiles().each { file ->
+            println "-------------${file.getName()}"
+            if (file.exists() && file.isDirectory()) {
+                file.listFiles().each { file2 ->
+                    println "-------------${file2.getName()}"
+                    if (file2.exists() && file2.isDirectory()) {
+                        file2.listFiles().each { file3 ->
+                            if ((file3.getName().endsWith("apk") || file3.getName().endsWith("properties")) && file3.getName().contains("release")) {
+                                fileList.add(file3.path)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    doLast {
+        println "==============="
+        fileList.each { filePath ->
+            copy() {
+                //from 是一个方法，指定拷贝的源文件/文件夹>file("app/build/output/apk") 是方法的参数
+                from file(filePath)
+                //into 是一个方法：指定拷贝的目的地>拷贝到根工程的output目录下
+                into targetPath
+            }
+        }
+    }
+}

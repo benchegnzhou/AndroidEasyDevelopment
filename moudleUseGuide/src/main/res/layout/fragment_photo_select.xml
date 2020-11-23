@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--占位图-->
+            <!--<TextView
+                android:layout_width="@dimen/qb_px_1"
+                android:layout_height="@dimen/qb_px_230" />-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhotosSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/qb_px_40"
+                android:paddingRight="@dimen/qb_px_40"
+                android:verticalSpacing="@dimen/qb_px_6" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlAddPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_368"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_holder"
+                    android:layout_width="@dimen/qb_px_142"
+                    android:layout_height="@dimen/qb_px_142"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/eidt_ic_add" />
+
+                <TextView
+                    android:id="@+id/tvPhotoHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_holder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_20"
+                    android:textColor="@color/color_text_4bbdf3"
+                    android:text="添加图片"
+                    android:textSize="@dimen/qb_px_45" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="@color/color_line_dfdfdf" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/qb_px_30"
+    android:id="@+id/cont_root"
+    android:clickable="true"
+    android:layout_height="@dimen/qb_px_144">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/qb_px_40"
+        android:layout_marginRight="@dimen/qb_px_40"
+        android:gravity="center"
+        style="@style/ButtonStyle"
+        android:textSize="@dimen/qb_px_44" />
+
+</RelativeLayout>

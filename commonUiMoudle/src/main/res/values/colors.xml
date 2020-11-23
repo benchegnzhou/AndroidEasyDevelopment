@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryCommonUi">#6200EE</color>
+    <color name="colorPrimaryDarkCommonUi">#3700B3</color>
+    <color name="colorAccentCommonUi">#03DAC5</color>
+    <color name="color_transp_common_ui">#ffffffff</color>
+
+
+    <!--    文字颜色333333-->
+    <color name="common_ui_333333">#333333</color>
+
+    <!--    文字颜色666666-->
+    <color name="common_ui_666666">#666666</color>
+
+    <!--    文字颜色999999-->
+    <color name="common_ui_999999">#999999</color>
+
+
+    <!-- 分割线的颜色 -->
+    <color name="common_ui_colorLine">#DCDCDC</color>
+
+    <!-- 对话框确认按钮文本颜色 -->
+    <color name="common_ui_colorConfirm">#0B89FF</color>
+
+    <!-- 对话框取消按钮文本颜色 -->
+    <color name="common_ui_colorCancel">#999999</color>
+
+
+    <color name="common_ui_colorConfirm_delete">#FF2020</color>
+
+    <color name="common_ui_white">#FFFFFFFF</color>
+    <color name="common_ui_white95">#F2FFFFFF</color>
+    <color name="common_ui_white90">#E6FFFFFF</color>
+    <color name="common_ui_white85">#D9FFFFFF</color>
+    <color name="common_ui_white80">#CCFFFFFF</color>
+    <color name="common_ui_white75">#BFFFFFFF</color>
+    <color name="common_ui_white70">#B3FFFFFF</color>
+    <color name="common_ui_white65">#A6FFFFFF</color>
+    <color name="common_ui_white60">#99FFFFFF</color>
+    <color name="common_ui_white55">#8CFFFFFF</color>
+    <color name="common_ui_white50">#80FFFFFF</color>
+    <color name="common_ui_white45">#73FFFFFF</color>
+    <color name="common_ui_white40">#66FFFFFF</color>
+    <color name="common_ui_white35">#59FFFFFF</color>
+    <color name="common_ui_white30">#4DFFFFFF</color>
+    <color name="common_ui_white25">#40FFFFFF</color>
+    <color name="common_ui_white20">#33FFFFFF</color>
+    <color name="common_ui_white15">#26FFFFFF</color>
+    <color name="common_ui_white10">#1AFFFFFF</color>
+    <color name="common_ui_white5">#0DFFFFFF</color>
+
+
+    <!-- 黑色 -->
+    <color name="common_ui_black">#FF000000</color>
+    <color name="common_ui_black95">#F2000000</color>
+    <color name="common_ui_black90">#E6000000</color>
+    <color name="common_ui_black85">#D9000000</color>
+    <color name="common_ui_black80">#CC000000</color>
+    <color name="common_ui_black75">#B000000F</color>
+    <color name="common_ui_black70">#B3000000</color>
+    <color name="common_ui_black65">#A6000000</color>
+    <color name="common_ui_black60">#99000000</color>
+    <color name="common_ui_black55">#8C000000</color>
+    <color name="common_ui_black50">#80000000</color>
+    <color name="common_ui_black45">#73000000</color>
+    <color name="common_ui_black40">#66000000</color>
+    <color name="common_ui_black35">#59000000</color>
+    <color name="common_ui_black30">#4D000000</color>
+    <color name="common_ui_black25">#40000000</color>
+    <color name="common_ui_black20">#33000000</color>
+    <color name="common_ui_black15">#26000000</color>
+    <color name="common_ui_black10">#1A000000</color>
+    <color name="common_ui_black5">#0D000000</color>
+</resources>

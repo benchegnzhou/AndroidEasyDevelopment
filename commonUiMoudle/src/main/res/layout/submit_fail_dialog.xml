@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/common_ui_white"
+    app:cardCornerRadius="@dimen/qb_px_45"
+    app:cardElevation="0px"
+    tools:context=".dialog.SubmitSuccessDialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="@dimen/qb_px_330"
+        android:minHeight="@dimen/qb_px_330"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_hint_icon"
+            android:layout_width="@dimen/qb_px_198"
+            android:layout_height="@dimen/qb_px_198"
+            android:layout_marginTop="@dimen/qb_px_34"
+            app:srcCompat="@drawable/ic_sbtc_fj_fail" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_hint_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/qb_px_45"
+            android:layout_marginTop="@dimen/qb_px_15"
+            android:layout_marginBottom="@dimen/qb_px_30"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/common_ui_333333"
+            android:textSize="@dimen/qb_px_42"
+            tools:text="提示语" />
+
+        <Button
+            android:id="@+id/btn_affirm"
+            android:layout_width="@dimen/qb_px_624"
+            android:layout_height="@dimen/qb_px_128"
+            android:layout_marginTop="@dimen/qb_px_92"
+            android:layout_marginLeft="@dimen/qb_px_144"
+            android:layout_marginRight="@dimen/qb_px_144"
+            android:text="知道了"
+            android:textColor="@color/common_ui_white"
+            android:textSize="@dimen/qb_px_44"
+            android:layout_marginBottom="@dimen/qb_px_44"
+            android:background="@drawable/selector_submit_fail_dialog_btn"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

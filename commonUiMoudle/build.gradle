@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-noarg'
+apply plugin: 'kotlin-allopen'
+apply plugin: 'kotlin-android-extensions'
+//通用配置引入
+apply from: '../commonConfig.gradle'
+
+
+android {
+
+
+    compileSdkVersion android.compileSdkVersion
+
+    defaultConfig {
+//        applicationId "com.ztsc.commonuimoudle"
+        minSdkVersion android.minSdkVersion
+        targetSdkVersion android.targetSdkVersion
+        versionCode android.versionCode
+        versionName android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        check {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation dependenciesLib.core_ktx
+
+    implementation dependenciesLib.appcompat_androidx
+    implementation dependenciesLib.constraintlayout
+    testImplementation dependenciesLib.junit
+    testImplementation dependenciesLib.junit_android
+    testImplementation dependenciesLib.espresso_android
+
+    //kotlin 依赖
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation project(':commonCoreUtil')
+
+
+    implementation dependenciesLib.cardview_v7
+    implementation("org.jetbrains.anko:anko:$anko_version") {
+        exclude module: 'support-v4'
+    }
+
+
+    implementation dependenciesLib.BaseRecyclerViewAdapterHelper
+
+    implementation dependenciesLib.glide
+    kapt dependenciesLib.glide_compiler   //注解处理器
+
+}
+
+task outputApp1 {
+    println "testTask outputApp1"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The color black, equivalent to 0xff000000 -->
+    <color name="black_common_util">#ff000000</color>
+    <!-- A light Holo shade of green. Equivalent to #ff99cc00. -->
+    <color name="holo_green_light">#ff99cc00</color>
+</resources>

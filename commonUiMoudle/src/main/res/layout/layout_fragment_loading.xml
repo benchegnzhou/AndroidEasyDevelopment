@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?><!--android:background="@drawable/loading_bg"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#22000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <!--加载中。。。-->
+    <FrameLayout
+        android:id="@+id/framelayout_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_loading_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uploading_icon" />
+
+            <TextView
+                android:id="@+id/tv_loading_messge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--退出样式-->
+    <FrameLayout
+        android:id="@+id/framelayout_qiut"
+        android:layout_width="244dp"
+        android:layout_height="226dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/pop_img_head_edit">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="22dp"
+                    android:text="提示"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sharp_dialog_bg_bottom">
+
+
+                <TextView
+                    android:id="@+id/tv_message_quit"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="确认要放弃编辑吗？" />
+
+
+                <TextView
+                    android:id="@+id/tv_quit_btn_left"
+                    android:layout_width="88dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/sharp_dialog_contour"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#666"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/tv_quit_btn_right"
+                    android:layout_width="88dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/pop_bg_btn_yes"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--发布完成和成功的样式-->
+    <FrameLayout
+        android:id="@+id/framelayout_message"
+        android:layout_width="244dp"
+        android:layout_height="226dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/pop_img_head_succeed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="22dp"
+                    android:text="提示"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sharp_dialog_bg_bottom">
+
+
+                <TextView
+                    android:id="@+id/tv_single_option_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="帖子发布成功" />
+
+
+                <TextView
+                    android:id="@+id/tv_single_option_btn"
+                    android:layout_width="112dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/pop_bg_btn_know"
+                    android:gravity="center"
+                    android:text="我知道了"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <!--发布完成和失败的样式-->
+    <FrameLayout
+        android:id="@+id/framelayout_message_fail"
+        android:layout_width="244dp"
+        android:layout_height="226dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:background="@drawable/pop_img_head_failure"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sharp_dialog_bg_bottom">
+
+
+                <TextView
+                    android:id="@+id/tv_single_option_fail_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="失败" />
+
+
+                <TextView
+                    android:id="@+id/tv_single_option_fail_btn"
+                    android:layout_width="112dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/pop_bg_btn_failure"
+                    android:gravity="center"
+                    android:text="我知道了"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="normal|bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/common_toolbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_144"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_144">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/qb_px_160"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_58"
+                android:layout_height="@dimen/qb_px_58"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_40"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_ic_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/app_top_common_title_stytle"
+            android:layout_centerInParent="true"
+            tool:text="标题栏" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

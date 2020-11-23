@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar_root">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_98"
+                android:layout_marginTop="@dimen/qb_px_127"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/qb_px_70"
+                android:text="1. 格式化用户输入的手机号"
+                android:textColor="@color/common_ui_999999"
+                android:textSize="@dimen/qb_px_36" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/qb_px_40"
+                android:layout_marginTop="@dimen/qb_px_20">
+
+                <com.ztsc.commonuimoudle.editutils.PhoneEditText
+                    android:id="@+id/et_phone_num"
+                    android:layout_width="@dimen/qb_px_900"
+                    android:layout_height="@dimen/qb_px_136"
+                    android:background="@drawable/shape_login_input"
+                    android:hint="请输入手机号码"
+                    android:paddingLeft="@dimen/qb_px_187"
+                    android:textColor="@color/common_ui_333333"
+                    android:textColorHint="@color/color_hint_dcdcdc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/qb_px_61"
+                    android:text="+86"
+                    android:textSize="@dimen/qb_px_46"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_98"
+                android:layout_marginTop="@dimen/qb_px_127"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/qb_px_70"
+                android:text="2. 密码显示和隐藏"
+                android:textColor="@color/common_ui_999999"
+                android:textSize="@dimen/qb_px_36" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/qb_px_40"
+                android:layout_marginTop="@dimen/qb_px_20">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="@dimen/qb_px_900"
+                    android:layout_height="@dimen/qb_px_136"
+                    android:background="@drawable/shape_login_input"
+                    android:hint="输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="@dimen/qb_px_61"
+                    android:textColor="@color/color_text_33333"
+                    android:textColorHint="@color/color_hint_dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_is_can_see"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/et_password"
+                    android:layout_alignRight="@id/et_password"
+                    android:layout_alignBottom="@id/et_password">
+
+                    <ImageView
+                        android:id="@+id/iv_is_can_see"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/qb_px_64"
+                        android:layout_marginRight="@dimen/qb_px_65"
+                        android:src="@drawable/llist_lnvisible"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_98"
+                android:layout_marginTop="@dimen/qb_px_127"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/qb_px_70"
+                android:text="3. 过滤表情符"
+                android:textColor="@color/common_ui_999999"
+                android:textSize="@dimen/qb_px_36" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/qb_px_40"
+                android:layout_marginTop="@dimen/qb_px_20">
+
+                <EditText
+                    android:id="@+id/et_no_emoji"
+                    android:layout_width="@dimen/qb_px_900"
+                    android:layout_height="@dimen/qb_px_136"
+                    android:background="@drawable/shape_login_input"
+                    android:hint="请输入信息"
+                    android:maxLength="16"
+                    android:paddingLeft="@dimen/qb_px_61"
+                    android:textColor="@color/color_text_33333"
+                    android:textColorHint="@color/color_hint_dcdcdc" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_98"
+                android:layout_marginTop="@dimen/qb_px_127"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/qb_px_70"
+                android:text="4. 用户输入过滤器，用户仅可以录入数字和字母"
+                android:textColor="@color/common_ui_999999"
+                android:textSize="@dimen/qb_px_36" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/qb_px_40"
+                android:layout_marginTop="@dimen/qb_px_20">
+
+                <EditText
+                    android:id="@+id/et_number_letter"
+                    android:layout_width="@dimen/qb_px_900"
+                    android:layout_height="@dimen/qb_px_136"
+                    android:background="@drawable/shape_login_input"
+                    android:hint="请输入信息"
+                    android:maxLength="16"
+                    android:paddingLeft="@dimen/qb_px_61"
+                    android:textColor="@color/color_text_33333"
+                    android:textColorHint="@color/color_hint_dcdcdc" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_98"
+                android:layout_marginTop="@dimen/qb_px_127"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/qb_px_70"
+                android:text="5. 文本仅保留汉字"
+                android:textColor="@color/common_ui_999999"
+                android:textSize="@dimen/qb_px_36" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/qb_px_40"
+                android:layout_marginTop="@dimen/qb_px_20">
+
+                <EditText
+                    android:id="@+id/et_chinese"
+                    android:layout_width="@dimen/qb_px_900"
+                    android:layout_height="@dimen/qb_px_136"
+                    android:background="@drawable/shape_login_input"
+                    android:hint="请输入信息"
+                    android:maxLength="16"
+                    android:paddingLeft="@dimen/qb_px_61"
+                    android:textColor="@color/color_text_33333"
+                    android:textColorHint="@color/color_hint_dcdcdc" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
